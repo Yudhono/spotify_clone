@@ -7,7 +7,7 @@ import 'package:spotify_clone/core/configs/assets/app_vectors.dart';
 import 'package:spotify_clone/data/models/auth/create_user_req.dart';
 import 'package:spotify_clone/domain/usecases/auth/signup.dart';
 import 'package:spotify_clone/presentation/auth/pages/signin.dart';
-import 'package:spotify_clone/presentation/root/pages/root.dart';
+import 'package:spotify_clone/presentation/home/pages/home.dart';
 import 'package:spotify_clone/service_locator.dart';
 
 class SignupPage extends StatefulWidget {
@@ -97,8 +97,7 @@ class _SignupPageState extends State<SignupPage> {
                     Navigator.pushAndRemoveUntil(
                         context,
                         MaterialPageRoute(
-                            builder: (BuildContext context) =>
-                                const RootPage()),
+                            builder: (BuildContext context) => HomePage()),
                         (route) => false);
                   });
                 },
