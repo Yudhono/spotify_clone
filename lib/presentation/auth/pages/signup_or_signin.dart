@@ -70,7 +70,7 @@ class SignupOrSignin extends StatelessWidget {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => const SignupPage()));
+                                    builder: (context) => SignupPage()));
                           },
                           title: 'Register',
                         ),
