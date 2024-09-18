@@ -19,13 +19,14 @@ Future<void> main() async {
   );
 
   try {
-    await Firebase.initializeApp(
-      options: DefaultFirebaseOptions.currentPlatform,
-    );
-  } on FirebaseException catch (e) {
-    if (e.code != 'duplicate-app') {
-      rethrow;
+    if (Firebase.apps.isEmpty) {
+      await Firebase.initializeApp(
+        name: 'spotify_clone',
+        options: DefaultFirebaseOptions.currentPlatform,
+      );
     }
+  } catch (e) {
+    print('Firebase initialization error: $e');
   }
 
   await initializeDependencies();
