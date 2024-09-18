@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "658658514740",
-    "project_id": "flt-spotify",
-    "storage_bucket": "flt-spotify.appspot.com"
+    "project_number": "299310310276",
+    "project_id": "flt-spotify-a3f52",
+    "storage_bucket": "flt-spotify-a3f52.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:658658514740:android:350e57ef3a6c4352187761",
+        "mobilesdk_app_id": "1:299310310276:android:e3e1bdee42715f1e2e73d1",
         "android_client_info": {
           "package_name": "com.example.spotify_clone"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyB1SNJbDwX0kSCJcKjR4BKZHOQ_NjYpSVs"
+          "current_key": "AIzaSyDQhp-lXuFMYRWgvToqwUfgp8WWDx-DTcc"
         }
       ],
       "services": {

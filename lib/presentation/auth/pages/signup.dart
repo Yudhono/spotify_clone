@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:spotify_clone/common/helpers/is_dark_mode.dart';
@@ -12,7 +11,7 @@ import 'package:spotify_clone/presentation/root/pages/root.dart';
 import 'package:spotify_clone/service_locator.dart';
 
 class SignupPage extends StatefulWidget {
-  SignupPage({super.key});
+  const SignupPage({super.key});
 
   @override
   State<SignupPage> createState() => _SignupPageState();

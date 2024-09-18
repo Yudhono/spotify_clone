@@ -16,18 +16,9 @@ import 'package:flutter/foundation.dart'
 /// ```
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
-    if (kIsWeb) {
-      return web;
-    }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
         return android;
-      case TargetPlatform.iOS:
-        return ios;
-      case TargetPlatform.macOS:
-        return macos;
-      case TargetPlatform.windows:
-        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -40,47 +31,11 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCs7rK2fnfsbzQzfgXjERBqRjJmCt7lR_w',
-    appId: '1:658658514740:web:e0277ae9ed546031187761',
-    messagingSenderId: '658658514740',
-    projectId: 'flt-spotify',
-    authDomain: 'flt-spotify.firebaseapp.com',
-    storageBucket: 'flt-spotify.appspot.com',
-  );
-
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCs7rK2fnfsbzQzfgXjERBqRjJmCt7lR_w',
-    appId: '1:658658514740:android:350e57ef3a6c4352187761',
-    messagingSenderId: '426509858399',
-    projectId: 'flt-spotify',
-    storageBucket: 'flt-spotify.appspot.com',
-  );
-
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCs7rK2fnfsbzQzfgXjERBqRjJmCt7lR_w',
-    appId: '1:658658514740:ios:d1d39473c7bb76dc187761',
-    messagingSenderId: '658658514740',
-    projectId: 'flt-spotify',
-    storageBucket: 'flt-spotify.appspot.com',
-    iosBundleId: 'com.example.spotify',
-  );
-
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyCs7rK2fnfsbzQzfgXjERBqRjJmCt7lR_w',
-    appId: '1:658658514740:ios:d1d39473c7bb76dc187761',
-    messagingSenderId: '658658514740',
-    projectId: 'flt-spotify',
-    storageBucket: 'flt-spotify.appspot.com',
-    iosBundleId: 'com.example.spotify',
-  );
-
-  static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyCs7rK2fnfsbzQzfgXjERBqRjJmCt7lR_w',
-    appId: '1:658658514740:web:11ac004391755727187761',
-    messagingSenderId: '658658514740',
-    projectId: 'flt-spotify',
-    authDomain: 'flt-spotify.firebaseapp.com',
-    storageBucket: 'flt-spotify.appspot.com',
+    apiKey: 'AIzaSyDQhp-lXuFMYRWgvToqwUfgp8WWDx-DTcc',
+    appId: '1:299310310276:android:e3e1bdee42715f1e2e73d1',
+    messagingSenderId: '299310310276',
+    projectId: 'flt-spotify-a3f52',
+    storageBucket: 'flt-spotify-a3f52.appspot.com',
   );
 }
