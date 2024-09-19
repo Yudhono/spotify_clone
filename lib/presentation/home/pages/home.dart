@@ -6,6 +6,7 @@ import 'package:spotify_clone/core/configs/assets/app_images.dart';
 import 'package:spotify_clone/core/configs/assets/app_vectors.dart';
 import 'package:spotify_clone/core/configs/theme/app_colors.dart';
 import 'package:spotify_clone/presentation/home/widgets/news_songs.dart';
+import 'package:spotify_clone/presentation/home/widgets/play_list.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({super.key});
@@ -35,24 +36,31 @@ class _HomePageState extends State<HomePage>
             width: 40,
           )),
       body: SingleChildScrollView(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            _homeTopCard(),
-            _tabs(),
-            SizedBox(
-              height: 260,
-              child: TabBarView(
-                controller: _tabController,
-                children: [
-                  const NewsSongs(),
-                  Container(),
-                  Container(),
-                  Container()
-                ],
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              _homeTopCard(),
+              _tabs(),
+              SizedBox(
+                height: 260,
+                child: TabBarView(
+                  controller: _tabController,
+                  children: [
+                    const NewsSongs(),
+                    Container(),
+                    Container(),
+                    Container()
+                  ],
+                ),
               ),
-            )
-          ],
+              const SizedBox(
+                height: 40,
+              ),
+              PlayList()
+            ],
+          ),
         ),
       ),
     );
