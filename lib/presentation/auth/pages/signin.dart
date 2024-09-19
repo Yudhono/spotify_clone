@@ -76,14 +76,6 @@ class SigninPage extends StatelessWidget {
                       ),
                     );
                   }, (r) {
-                    ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                      content: Text('Signin successful',
-                          style: TextStyle(
-                              color: context.isDarkMode
-                                  ? Colors.white
-                                  : Colors.black)),
-                    ));
-                    // redirect to root
                     Navigator.pushAndRemoveUntil(
                         context,
                         MaterialPageRoute(
